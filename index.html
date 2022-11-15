@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watermonitoring</title>
+     <link rel="icon" href="images/icon.png">
+</head>
+<style>
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.content{
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 50px;
+    font-size: 24px;
+}
+p{
+    padding-top: 10px;
+    font-size: 18px;
+    }
+button{
+    width: 180px;
+    font-size: 18px;
+    padding: 10px;
+    background: lightgreen;
+    color: black;
+    cursor: pointer;
+    border: 2px solid green;
+    border-radius: 50px;
+    margin-top: 10px;
+}
+button:hover{
+    background-color: green;
+    color: black;
+}
+.content1{
+    background-image: url('images/h1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+#preloader {
+    background: #000 url('images/loading.gif') no-repeat center center;
+    background-size: 25%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+   </style>
+<body>
+
+    <div id = preloader></div>
+
+    <section class="home">
+        <div class="content1">
+        <div class="content">
+            <h1>Real-Time River Water Quality Monitoring and Control System </h1>
+            <p> Can be able to know if there are any dust particles present in the water. 
+                The PH level of the water can be monitored. 
+                Water temperature can be monitored.
+                Alerting the authorities if the water quality is not good so that they can go and announce the localities not to drink that water.</p>
+            <a href="./ibmlogin.html"><button>Get Started</button></a>
+        </div>
+    </div>
+    </section>
+
+    <script>
+        var loader = document.getElementById("preloader");
+
+        window.addEventListener("load", function(){
+            loader.style.display = "none";
+        })
+    </script>
+
+</body>
+</html>
+
